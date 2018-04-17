@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E6912BF2086516A00CCF6B3 /* EyelinerKitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C06C42086467900B50065 /* EyelinerKitTest.swift */; };
 		6EEDB8E02085013900399623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDB8DF2085013900399623 /* AppDelegate.swift */; };
 		6EEDB8E22085013900399623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDB8E12085013900399623 /* ViewController.swift */; };
 		6EEDB8E52085013900399623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEDB8E32085013900399623 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E9C06C42086467900B50065 /* EyelinerKitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyelinerKitTest.swift; sourceTree = "<group>"; };
 		6EEDB8DC2085013900399623 /* ProjectTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEDB8DF2085013900399623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EEDB8E12085013900399623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		6EEDB8F62085013900399623 /* ProjectTwoTests */ = {
 			isa = PBXGroup;
 			children = (
+				6E9C06C42086467900B50065 /* EyelinerKitTest.swift */,
 				6EEDB8F72085013900399623 /* ProjectTwoTests.swift */,
 				6EEDB8F92085013900399623 /* Info.plist */,
 			);
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EEDB8F82085013900399623 /* ProjectTwoTests.swift in Sources */,
+				6E6912BF2086516A00CCF6B3 /* EyelinerKitTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

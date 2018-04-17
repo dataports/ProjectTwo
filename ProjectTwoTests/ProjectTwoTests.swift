@@ -11,26 +11,42 @@ import XCTest
 
 class ProjectTwoTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testConstructorNil(){
+        let myNilInstance = EyelinerKit(myBrand: "KVD", myPriceEyeliner: 20, myPriceKit: -1, myIsBlueEL:true)
+        XCTAssertNil(myNilInstance)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    //Must create the instance, then use intance to call method
+    func testNewKitPrice(){
+        let kitInstance = EyelinerKit(myBrand: "KVD", myPriceEyeliner: 10, myPriceKit: 90, myIsBlueEL: true)
+        let checkNewPrice = kitInstance?.newPriceOfKit(inputPrice: 5)
+        XCTAssertEqual(15, checkNewPrice)
+    }
+    //Must create the instance, then use intance to call method
+    func testNewEyelinerPrice(){
+        let kitInstance = EyelinerKit(myBrand: "KVD", myPriceEyeliner: 5, myPriceKit: 90, myIsBlueEL: true)
+        let checkNewPrice = kitInstance?.newPriceOfEyeliner(inputPrice: 20)
+        XCTAssertEqual(25, checkNewPrice)
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    //Must create the instance, then use intance to call method
+    func testBlueELFALSE(){
+        let kitInstance = EyelinerKit()
+        let checkBlueEL = kitInstance.isBlueEyeliner(inputBlueEyeliner: false)
+        XCTAssertEqual(true, checkBlueEL)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    //Must create the instance, then use intance to call method
+    func testBlueELTRUE(){
+        let kitInstance = EyelinerKit()
+        let checkBlueEL = kitInstance.isBlueEyeliner(inputBlueEyeliner: true)
+        XCTAssertEqual(true, checkBlueEL)
+    }
+    
+    func testNewName(){
+        let kitInstance = EyelinerKit(myBrand: "KVD", myPriceEyeliner: 10, myPriceKit: 90, myIsBlueEL: true)
+        let newNameOfKit = kitInstance?.newProductName(inputName: "KVD")
+        XCTAssertEqual("KVD Electric", newNameOfKit)
     }
     
 }
